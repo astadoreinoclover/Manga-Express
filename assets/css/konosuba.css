@@ -1,0 +1,293 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body { 
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #eee;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: #999;
+}
+
+.container {
+    width: 1140px;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+}
+
+.logo .nome-logo {
+    font-size: 15px;
+    font-weight: 700;
+    color: #333;
+}
+
+.menu {
+    width: 40px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.bar {
+    background-color: #000;
+    height: 3px;
+    width: 40px;
+}
+
+nav {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 70px;
+    background-color: #888;
+    border-top: 2px solid #30303d;
+}
+
+.flex {
+    display: flex;
+}
+
+.none {
+    display: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ccc;
+    transition: all linear 0.8s;
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover,
+.neste {
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+.pagina {
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+}
+
+.container-1 {
+    width: 1140px;
+    display: flex;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-area {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.linha {
+    height: 3px;
+    background-color: #111;
+    flex: 1;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+}
+
+.titulo h2 {
+    font-size: 30px;
+    text-shadow: 2px 2px 4px #555;
+    color: #000;
+    margin: 0px 15px;
+}
+
+.area-mangas {
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 800px;
+}
+
+.inicial-mangas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1140px;
+    justify-content: space-between;
+}
+
+.manga-mp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #222;
+    padding:10px;
+    border-radius: 6px;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.manga-mp .image {
+    max-width: 210px;
+    width: 210px;
+}
+
+.comprar {
+    background-color: #ff0101;
+    padding: 5px 7px;
+    border-radius: 5px;
+    font-size: 21px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: all linear 1s;
+}
+
+.comprar:hover {
+    background-color: #c10000;
+    color: #aaa;
+}
+
+footer {
+    background-color: #555;
+    margin-top: 50px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #666;
+    padding-bottom: 12px;
+}
+
+.footer-area {
+    display: flex;
+    flex-direction: row;
+    width: 1140px;
+}
+
+.esquerda {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 10px;
+    border-right: 2px solid #999;
+    flex: 1;
+}
+
+span {
+    color: #ddd;
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.esquerda a {
+    text-decoration: none;
+    color: #999;
+    line-height: 23px;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.esquerda a:hover {
+    color: #00f;
+}
+
+.centro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 10px;
+    border-right: 2px solid #999;
+    flex: 1;
+}
+
+.centro a {
+    text-decoration: none;
+    color: #999;
+    line-height: 23px;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.centro a:hover {
+    color: #00f;
+}
+
+.direita {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 10px;
+    flex: 1;
+}
+
+.direita a {
+    text-decoration: none;
+    color: #999;
+    line-height: 23px;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.direita a:hover {
+    color: #00f;
+}
+
+.copy {
+    color: #fff;
+    font-size: 10px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 12px;
+    line-height: 15px;
+}
+
+.copy a {
+    text-decoration: none;
+    color: #eee;
+}
+
+.copy a:hover {
+    color: #00f;
+}
+
+.subir {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #333;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    cursor: pointer;
+}
