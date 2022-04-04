@@ -420,3 +420,82 @@ span {
     bottom: 50px;
     cursor: pointer;
 }
+
+.modal {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-container {
+    width: 1140px;
+    padding: 40px;
+}
+
+.voltar-modal {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #c10000;
+    cursor: pointer;
+}
+
+.area-do-manga {
+    display: flex;
+    margin-top: 50px;
+    border: 1px solid #000;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.modal-img {
+    width: 250px;
+    margin-right: 30px;
+}
+
+.area-do-manga img {
+    width: 250px;
+    height: auto;
+}
+
+.manga-info-modal {
+    display: flex;
+    flex-direction: column;
+} 
+
+.titulo-modal {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.descrição-modal {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.comprar-modal {
+    display: flex;
+}
+
+.valor-modal {
+    font-size: 30px;
+    color: #c10000;
+    font-weight: 700;
+}
+
+.comprar-item-modal {
+    color: #fff;
+    background-color: #c10000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 0;
+    margin-left: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all linear 0.5s;
+}
+
+.comprar-item-modal:hover {
+    background-color: #ff0000;
+}

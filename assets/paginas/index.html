@@ -16,6 +16,8 @@
         </div>
     </div>
 
+
+
     <header>
         <div class="header">
             <div class="container">
@@ -42,7 +44,7 @@
         <a href="./pre.html">Pré-venda</a>
     </nav>
 
-    <section onmouseover="adicionartexto()" onmouseout="retirartexto()" class="banner">
+    <section onmouseover="adicionartexto()" onmouseout="retirartexto()" id="banner" class="banner">
         <div id="banner" class="banner1">
             <div class="area-text">
                 <div class="text-banner none">Demon Slayer é uma coleção de mangas, completa em 23 volumes.</div>
@@ -60,7 +62,7 @@
         </div>
     </section>
 
-    <section class="pagina">
+    <section class="pagina" id="pagina">
         <div class="container-1">
             <main>
                 <div class="conteudo">
@@ -76,6 +78,27 @@
             </main>
         </div>
     </section>
+
+    <div class="none" id="modal-base">
+        <div id="modal" class="modal">
+            <div class="modal-container">
+                <a onclick="voltarpagina()" class="voltar-modal">Voltar</a>
+                <div class="area-do-manga">
+                    <div class="modal-img">
+                        <img class="img-modal" src="" alt="">
+                    </div>
+                    <div class="manga-info-modal">
+                        <div class="titulo-modal"></div>
+                        <div class="descrição-modal"></div>
+                        <div class="comprar-modal">
+                            <div class="valor-modal"></div>
+                            <button class="comprar-item-modal">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <div class="footer">

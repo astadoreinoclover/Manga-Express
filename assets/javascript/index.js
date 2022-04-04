@@ -148,20 +148,58 @@ b4.addEventListener('click', function(){
 
 //fim da programação do banner
 
-
+let modalKey = 0;
 
 
 mpJson.map(function(item, index){
     let capa = document.querySelector('.area-mangas .manga-mp').cloneNode(true);
 
+    capa.setAttribute('data-key', index);
     capa.querySelector('.image').src = item.img;
     capa.querySelector('.nome').innerHTML = item.name;
     capa.querySelector('.valor').innerHTML = `R$ ${item.price}`;
-    capa.querySelector('.comprar').href = item.link;
+    capa.querySelector('.comprar').addEventListener('click', (e)=>{
+        e.preventDefault();
+        document.querySelector('#pagina').classList.remove('pagina');
+        document.querySelector('#pagina').classList.add('none');
+        document.querySelector('#banner').classList.remove('banner');
+        document.querySelector('#banner').classList.add('none');
+        document.querySelector('#modal-base').classList.remove('none');
+        window.scrollY === 0 ;
+
+        document.querySelector('.img-modal').src = mpJson[item.id].img;
+        document.querySelector('.titulo-modal').innerHTML = mpJson[item.id].name;
+        document.querySelector('.descrição-modal').innerHTML = mpJson[item.id].desc;
+        document.querySelector('.valor-modal').innerHTML =`R$ ${mpJson[item.id].price}`;
+        document.querySelector('.comprar-item-modal').addEventListener('click', (b)=>{
+            b.preventDefault();
+            addcarrinho();
+
+            document.querySelector('#modal-base').classList.add('none');
+            document.querySelector('#pagina').classList.remove('none'); 
+            document.querySelector('#pagina').classList.add('pagina');
+            document.querySelector('#banner').classList.remove('none');
+            document.querySelector('#banner').classList.add('banner');
+            
+            console.log(carrinhoJson);
+        });    
+    });
+
+    function addcarrinho() { 
+        carrinhoJson.push(carJson);
+    }
 
     document.querySelector('.inicial-mangas').append(capa);
 });
 
+
+function voltarpagina() {
+    document.querySelector('#modal-base').classList.add('none');
+    document.querySelector('#pagina').classList.remove('none');
+    document.querySelector('#pagina').classList.add('pagina');
+    document.querySelector('#banner').classList.remove('none');
+    document.querySelector('#banner').classList.add('banner');
+}
 
 
 

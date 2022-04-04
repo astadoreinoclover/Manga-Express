@@ -1,12 +1,12 @@
 let mpJson = [
-    {id:1, name:'Demon Slayer - 23', img:'../images/demon23.jpg', price:'29,90', link:'./demon23.html'},
-    {id:2, name:'Solo Leveling - 1', img:'../images/leveling1.jpg', price:'47,40', link:'assets/paginas/demon22.html'},
-    {id:3, name:'Komi-San - 1', img:'../images/komi1.jpg', price:'34,90', link:'assets/paginas/demon21.html'},
-    {id:4, name:'Chainsaw Man - 1', img:'../images/c1.jpg', price:'29,90', link:'assets/paginas/demon20.html'},
-    {id:5, name:'The Last', img:'../images/thelast.jpg', price:'39,90', link:'assets/paginas/demon19.html'},
-    {id:6, name:'Tokyo Revengers - 7', img:'../images/tokyo7.jpg', price:'34,90', link:'assets/paginas/demon18'},
-    {id:7, name:'Wotakoi - 11', img:'../images/w11.jpg', price:'24,90', link:'assets/paginas/demon17'},
-    {id:8, name:'Demon Slayer - 16', img:'../images/demon16.jpg', price:'29,90', link:'assets/paginas/demon16'},
+    {id:0, name:'Demon Slayer - 23', img:'../images/demon23.jpg', price:'29,90', desc:'A batalha entre Muzan Kibutsuji, o progenitor dos Onis e Tanjirou e o Kisatsutai ruma para a sua conclusão!! Os quatro tipos de remédios que Tamayo conseguiu inocular no corpo de Muzan fizeram com que ele enfraquecesse e finalmente fosse encurralado! Qual será o destino de Tanjirou, Nezuko e do Kisatsutai?! O longo confronto contra os Onis finalmente está chegando ao seu fim!!'},
+    {id:1, name:'Solo Leveling - 1', img:'../images/leveling1.jpg', price:'47,40', desc:'Um grande fenômeno um dia aconteceu, portais desconhecidos surgiram ligando o mundo que conhecemos a uma realidade totalmente extraordinária de monstros e seres fantasiosos, cujo único objetivo era matar humanos. Em resposta a esse novo perigo, surgiram os “Caçadores”, humanos que foram “despertados” e ganharam poderes capazes de bater de frente com essas criaturas. Dentre eles, há um conhecido por ser “a pior arma da humanidade”, Sung Jin-woo. Mas sua sorte irá mudar quando uma incursão que deveria ser fácil se torna um verdadeiro pesadelo.'},
+    {id:2, name:'Komi-San - 1', img:'../images/komi1.jpg', price:'34,90', desc:'E começa a jornada em busca das 100 amizades! O sonho da estudante socialmente ansiosa Komi Shouko é fazer alguns amigos, mas todos na escola confundem sua ansiedade social paralisante como uma personalidade descolada! Com a distância de todos os alunos e a incapacidade de Komi para se comunicar, amizades parecem sempre estar fora de seu alcance.'},
+    {id:3, name:'Chainsaw Man - 1', img:'../images/c1.jpg', price:'29,90', desc:'Denji é um jovem extremamente pobre que junto de Pochita, seu demônio de estimação, trabalha feito um condenado como Caçador de Demônios para pagar a imensa dívida que possui. Mas sua vida de miséria está prestes a mudar graças a uma traição brutal!! Aqui começa a história de um novo anti-herói que com um demônio em seu corpo, caça demônios!'},
+    {id:4, name:'The Last', img:'../images/thelast.jpg', price:'39,90', desc:'O verdadeiro final da maior saga ninja, começa a destruição da lua e meteoros caem sobre a Terra!<br/>Enquanto o último dia do mundo se aproxima, Hanabi Hyuuga é sequestrada por Toneri Otsutsuki na Vila Oculta da Folha. Naruto, Sakura, Shikamaru e Hinata saem então para uma missão de resgate. Muito além da obra original, esta é a novelização da história final!'},
+    {id:5, name:'Tokyo Revengers - 7', img:'../images/tokyo7.jpg', price:'34,90', desc:'Uma história de saltos no tempo e suspense retorna para um 7º volume! Desta vez é Toman vs. Valhalla, quando o "Bloody Halloween" começa! Os principais membros de ambas as gangues de repente se enfrentam em combate - Mikey vs. Kazutora, Draken vs. Hanma! No presente, Takemichi aprendeu uma verdade chocante: Mikey mata Kazutora nesta batalha. Mas será que Takemichi será capaz de mudar o passado desta vez?!'},
+    {id:6, name:'Wotakoi - 11', img:'../images/w11.jpg', price:'24,90', desc:'O relacionamento de Narumi com Hirotaka entra em crise quando ela corre o risco de descobrirem o seu lado otaku. Além disso, como será o desenrolar da relação de Naoya e Kou e de Taro e Hanako?'},
+    {id:7, name:'Demon Slayer - 16', img:'../images/demon16.jpg', price:'29,90', desc:'Dando sequência ao treinamento dos Hashiras, Tanjirou vai de encontro a Himejima, o Hashira da Rocha! Depois de passar pelo árduo treinamento de Himejima que consiste em meditar sob a cachoeira, carregar troncos e mover um rochedo, será que Tanjirou conseguirá a aprovação do Hashira?! Enquanto isso, Muzan segue nas sombras e está determinado a encontrar o paradeiro de Nezuko e Ubuyashiki!!'},
 ];
 
 let lancamentosJson = [
@@ -181,3 +181,7 @@ let tokyoJson = [
     {id:7, name:'Tokyo Revengers - 2', img:'../images/tokyo2.jpg', price:'34,90', link:'./.html'},
     {id:8, name:'Tokyo Revengers - 1', img:'../images/tokyo1.jpg', price:'34,90', link:'./.html'},
 ];
+
+let carrinhoJson = [];
+
+let carJson = [];
